@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Header from './components/header';
+import TotalBalance from './components/total-balance';
+import MoneyFlow from './components/MoneyFlow/money-flow';
+import History from './components/History/history';
+import Transaction from './components/Transaction/transaction';
+import GlobalContextProvider from './context/global-context';
 
-function App() {
+function ExpenseTracker() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container" style={{ maxWidth: '375px' }}>
+      <GlobalContextProvider>
+        <Header />
+        <TotalBalance />
+        <MoneyFlow />
+        <History />
+        <Transaction />
+      </GlobalContextProvider>
     </div>
   );
 }
 
-export default App;
+export default ExpenseTracker;

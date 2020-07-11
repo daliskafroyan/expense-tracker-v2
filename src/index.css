@@ -5,9 +5,70 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #fef8f5 !important;
+  color: #402b2b;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.history-card {
+  border-right: 7px solid #a73632 !important;
+}
+
+.form-control:focus {
+  box-shadow: 0 20px 40px rgba(238, 77, 71, 0.1) !important;
+  border: #ee4d47;
+}
+
+.button-transaction {
+  color: #ffffff;
+  font-weight: 700 !important;
+  letter-spacing: 2px;
+}
+
+.income-outcome-number {
+  font-size: 21px !important;
+}
+
+.plus {
+  border-right: 7px solid #576533 !important;
+}
+
+.min {
+  border-right: 7px solid #a73632 !important;
+}
+
+h1 {
+  font-family: 'DM Serif Display', serif;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800 !important;
+  color: #402b2b;
+}
+
+h4 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  letter-spacing: 2px;
+  color: #ee4d47;
+}
+
+h5 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  letter-spacing: 2px;
+  margin-bottom: -0.5rem !important;
+  color: #ee4d47;
+}
+
+p {
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px !important;
 }
