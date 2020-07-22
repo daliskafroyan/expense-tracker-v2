@@ -19,7 +19,7 @@ const TotalBalance = () => {
       }}
     >
       <h4>TOTAL BALANCE</h4>
-      <h2>{total}</h2>
+      <h2>Rp {total}</h2>
     </div>
   );
 };

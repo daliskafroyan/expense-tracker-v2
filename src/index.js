@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import ExpenseTracker from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Route, BrowserRouter as Router } from 'react-router-dom';
-import Homepage from './Homepage';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import About from './About';
 
 const routing = (
   <Router>
     <div>
-      <Route exact path="/" component={Homepage} />
-      <Route path="/expense-tracker" component={ExpenseTracker} />
+      <Switch>
+        <Route exact path="/" component={ExpenseTracker} />
+        <Route path="/about" component={About} />
+      </Switch>
     </div>
   </Router>
 );

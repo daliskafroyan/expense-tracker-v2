@@ -5,6 +5,7 @@ import MoneyFlow from './components/MoneyFlow/money-flow';
 import History from './components/History/history';
 import Transaction from './components/Transaction/transaction';
 import GlobalContextProvider from './context/global-context';
+import AboutLink from './components/Footer/about-link';
 
 function ExpenseTracker() {
   return (
@@ -15,6 +16,7 @@ function ExpenseTracker() {
         <MoneyFlow />
         <History />
         <Transaction />
+        <AboutLink />
       </GlobalContextProvider>
     </div>
   );
