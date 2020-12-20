@@ -1,9 +1,9 @@
-import React, { useState, useContext } from 'react';
-import { GlobalContext } from '../../context/global-context';
-import { v4 as uuid } from 'uuid';
+import React, { useState, useContext } from "react";
+import { GlobalContext } from "../../context/global-context";
+import { v4 as uuid } from "uuid";
 
 const TransactionForm = () => {
-  const [description, setDescription] = useState('');
+  const [description, setDescription] = useState("");
   const [amount, setAmount] = useState(0);
 
   const { addTransaction } = useContext(GlobalContext);
@@ -15,14 +15,14 @@ const TransactionForm = () => {
       description,
       amount: parseInt(amount),
     });
-    setDescription('');
+    setDescription("");
     setAmount(0);
   };
   return (
     <>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="description">Description</label>
+          <label htmlFor="description">Item</label>
           <input
             type="text"
             className="form-control"
@@ -33,7 +33,7 @@ const TransactionForm = () => {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="amount">Description</label>
+          <label htmlFor="amount">Value (add minus if it's outflow)</label>
           <input
             type="number"
             className="form-control"
@@ -45,11 +45,11 @@ const TransactionForm = () => {
         </div>
         <button
           style={{
-            width: '100%',
-            background: '#EE4D47',
-            border: 'none',
-            borderRadius: '5px',
-            padding: '7px',
+            width: "100%",
+            background: "#EE4D47",
+            border: "none",
+            borderRadius: "5px",
+            padding: "7px",
           }}
           type="submit"
         >
